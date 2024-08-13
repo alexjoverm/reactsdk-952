@@ -1,3 +1,4 @@
+import { initStoryblok } from '../lib/storyblok';
 import StoryblokProvider from '../components/StoryblokProvider';
 
 export const metadata = {
@@ -7,6 +8,8 @@ export const metadata = {
 interface RootLayoutType {
   children: React.ReactNode;
 }
+
+initStoryblok();
 
 export default function RootLayout({ children }: RootLayoutType) {
   return (

@@ -4,7 +4,7 @@ import {
   ISbStoriesParams,
   StoryblokStory,
 } from '@storyblok/react/rsc';
-import { initStoryblok } from '../src/storyblok';
+import { initStoryblok } from '../lib/storyblok';
 import Link from 'next/link';
 
 export default async function Home() {
@@ -21,7 +21,7 @@ export default async function Home() {
 }
 
 export async function fetchData() {
-  initStoryblok(); // initialize API
+  // initStoryblok(); // initialize API
   let sbParams: ISbStoriesParams = { version: 'draft' };
 
   const storyblokApi: StoryblokClient = getStoryblokApi();

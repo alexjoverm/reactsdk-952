@@ -1,6 +1,6 @@
 /** 1. Tag it as client component */
 'use client';
-import { initStoryblok } from '../src/storyblok.js';
+import { initStoryblok } from '../lib/storyblok';
 
 /** 2. Import your components */
 import Page from './Page';
